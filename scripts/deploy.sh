@@ -93,12 +93,6 @@ git clone https://github.com/crypto-world/prosody-web-registration-theme /home/g
 
 echo
 
-echo "Issuing initial SSL/TLS certificates"
-service hiawatha stop
-certbot certonly --standalone --rsa-key-size 2048 -d test.xmpp.is
-
-echo
-
 echo "Applying open file limits"
 echo "prosody hard nofile 999999" | tee -a /etc/security/limits.conf
 echo "prosody soft nofile 999999" | tee -a /etc/security/limits.conf
@@ -116,7 +110,6 @@ echo
 
 echo "Executing final steps"
 bash /home/git/test.xmpp.is/scripts/letsencrypt-to-hiawatha.sh
-bash /home/git/test.xmpp.is/scripts/letsencrypt-to-prosody.sh
 bash /home/git/test.xmpp.is/scripts/sync.sh
 bash /home/git/test.xmpp.is/scripts/force-owner-and-group.sh
 
