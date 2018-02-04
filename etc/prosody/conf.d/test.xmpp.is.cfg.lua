@@ -16,13 +16,13 @@ reload_modules = { "tls", "onions", "http", "register_web", "email_pass_reset_en
         storage = "internal"
 
 	ssl = {
-	   certificate = "/etc/prosody/certs/test.xmpp.is/fullchain.pem";
-	   key = "/etc/prosody/certs/test.xmpp.is/privkey.pem";
+	   certificate = "/etc/prosody/certs/localhost.crt";
+	   key = "/etc/prosody/certs/localhost.key";
 }
 
         https_ssl = {
-           certificate = "/etc/prosody/certs/test.xmpp.is/fullchain.pem";
-           key = "/etc/prosody/certs/test.xmpp.is/privkey.pem";
+           certificate = "/etc/prosody/certs/localhost.crt";
+           key = "/etc/prosody/certs/localhost.key";
 }
 
         http_ports = { 5280 }
