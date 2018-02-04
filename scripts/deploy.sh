@@ -71,8 +71,7 @@ echo
 echo "Making directories"
 mkdir -p /etc/prosody/certs
 mkdir -p /etc/hiawatha/ssl
-mkdir -p /var/www/xmpp.is
-mkdir -p /var/www/transparency.xmpp.is
+mkdir -p /var/www/test.xmpp.is
 
 echo
 
