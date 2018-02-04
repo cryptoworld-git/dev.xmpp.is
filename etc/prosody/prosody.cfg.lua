@@ -65,13 +65,13 @@ log = {
 }
 
         ssl = {
-           certificate = "/etc/prosody/certs/test.xmpp.is/fullchain.pem";
-           key = "/etc/prosody/certs/test.xmpp.is/privkey.pem";
+           certificate = "/etc/prosody/certs/localhost.crt";
+           key = "/etc/prosody/certs/localhost.key";
 }
 
         https_ssl = {
-           certificate = "/etc/prosody/certs/test.xmpp.is/fullchain.pem";
-           key = "/etc/prosody/certs/test.xmpp.is/privkey.pem";
+           certificate = "/etc/prosody/certs/localhost.crt";
+           key = "/etc/prosody/certs/localhost.key";
 }
 
 welcome_message = "Welcome to $host, make sure you browse around the site for more details about us! https://xmpp.is/"
