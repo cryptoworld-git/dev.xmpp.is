@@ -118,7 +118,6 @@ echo
 echo "Executing final steps"
 bash /home/git/test.xmpp.is/scripts/letsencrypt-to-hiawatha.sh
 bash /home/git/test.xmpp.is/scripts/letsencrypt-to-prosody.sh
-bash /home/git/test.xmpp.is/scripts/cert-fingerprint.sh
 bash /home/git/test.xmpp.is/scripts/sync.sh
 bash /home/git/test.xmpp.is/scripts/force-owner-and-group.sh
 
