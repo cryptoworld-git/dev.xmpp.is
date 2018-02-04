@@ -1,0 +1,9 @@
+DataDirectory /var/lib/tor
+Log notice file /var/log/tor/notice.log
+SafeLogging 0
+
+HiddenServiceVersion 3
+HiddenServiceDir /var/lib/tor/prosody_hidden_service/
+HiddenServicePort 5222 127.0.0.1:5222
+HiddenServicePort 5269 127.0.0.1:5269
+HiddenServicePort 80 127.0.0.1:80
