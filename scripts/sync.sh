@@ -31,7 +31,7 @@ rsync -av /home/git/test.xmpp.is/etc/mercurial/ /etc/mercurial/
 # prosody_web_registration_theme
 echo
 echo "Syncing prosody_web_registration_theme......"
-rsync -av /home/git/prosody_web_registration_theme /etc/prosody/register-templates/
+rsync -av /home/git/prosody-web-registration-theme /etc/prosody/register-templates/
 
 # mod_email_pass_reset_english
 echo
