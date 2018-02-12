@@ -23,13 +23,7 @@ echo
 
 echo "Adding Hiawatha repository"
 echo deb https://mirror.tuxhelp.org/debian/ squeeze main | tee -a /etc/apt/sources.list
-apt-key adv --recv-keys --keyserver keys.gnupg.net 79AF54A9
-
-echo
-
-echo "Adding GoAccess repository"
-echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" | tee -a /etc/apt/sources.list.d/goaccess.list
-wget -O - https://deb.goaccess.io/gnugpg.key | apt-key add -
+apt-key adv --recv-keys --keyserver pgp.mit.edu 79AF54A9
 
 echo
 
@@ -50,11 +44,6 @@ echo
 
 echo "Installing Hiawatha"
 apt install -y hiawatha
-
-echo
-
-echo "Installing GoAccess"
-apt install -y goaccess
 
 echo
 
