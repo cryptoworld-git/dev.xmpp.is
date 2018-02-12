@@ -41,6 +41,15 @@ modules_enabled = {
 		"default_vcard";
 		"cloud_notify";
 		"block_registrations";
+		
+	-- Modules In Testing --
+	
+		"adhoc_account_management";
+		"firewall";
+		"spam_reporting";
+		"measure_stanza_counts";
+		"c2s_conn_throttle";
+		"c2s_limit_sessions";
 };
 	
 modules_disabled = {
@@ -60,8 +69,10 @@ pidfile = "/var/run/prosody/prosody.pid"
 plugin_paths = { "/var/lib/prosody/modules" }
 
 log = {
-	info = "/dev/null";
+	info = "/var/log/prosody/prosody.info";
 	error = "/var/log/prosody/prosody.err";
+	warn = "/var/log/prosody/prosody.warn";
+	debug = "/var/log/prosody/prosody.debug";
 }
 
         ssl = {
