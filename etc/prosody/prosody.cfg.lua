@@ -68,6 +68,8 @@ pidfile = "/var/run/prosody/prosody.pid"
 
 plugin_paths = { "/var/lib/prosody/modules" }
 
+statistics = "internal"
+
 log = {
 	info = "/var/log/prosody/prosody.info";
 	error = "/var/log/prosody/prosody.err";
