@@ -1,5 +1,5 @@
-VirtualHost "test.xmpp.is"
-http_host = "http.test.xmpp.is"
+VirtualHost "dev.xmpp.is"
+http_host = "http.dev.xmpp.is"
 modules_enabled = { "onions", "http", "register_web", "email_pass_reset_english" };
 reload_modules = { "tls", "onions", "http", "register_web", "email_pass_reset_english", "http_upload" };
 
@@ -25,21 +25,15 @@ reload_modules = { "tls", "onions", "http", "register_web", "email_pass_reset_en
            key = "/etc/prosody/certs/localhost.key";
 }
 
-        http_ports = { 5280 }
-        http_interfaces = { "*" }
-
-        https_ports = { 5281 }
-        https_interfaces = { "*" }
-
         register_web_template = "/etc/prosody/register-templates/prosody_web_registration_theme"
 
 	--INSERT_SECRETS--
 
-        Component "upload.test.xmpp.is" "http_upload"
+        Component "upload.dev.xmpp.is" "http_upload"
         http_upload_expire_after = 60 * 60 * 24 * 7
         http_upload_file_size_limit = 10000000
 	http_upload_quota = 1000000000
 
-        Component "muc.test.xmpp.is" "muc"
+        Component "muc.dev.xmpp.is" "muc"
         name = "test.xmpp.is MUC"
         restrict_room_creation = "local"
