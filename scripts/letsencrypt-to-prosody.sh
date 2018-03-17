@@ -1,7 +1,7 @@
 #!/bin/bash
 # Scripts that copies over all new certificates to Prosody and sets correct permissions
 
-DIR1="test.xmpp.is"
+DIR1="dev.xmpp.is"
 LE_DIR="/etc/letsencrypt/live/"
 CERTS="/etc/prosody/certs/"
 PROSODY="/etc/prosody/"
