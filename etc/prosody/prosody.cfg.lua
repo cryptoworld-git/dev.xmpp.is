@@ -1,6 +1,6 @@
 daemonize = true;
-
 use_libevent = true;
+legacy_ssl_ports = 5223;
 
 reload_modules = { "tls", "limit_auth", "smacks", "csi", "filter_chatstates", "limits", "default_vcard", "cloud_notify", "block_registrations" }
 
