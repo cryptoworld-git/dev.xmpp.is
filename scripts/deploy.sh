@@ -93,7 +93,7 @@ echo "Pulling configs and modules"
 echo
 
 # Prosody configs & scripts
-git clone https://github.com/crypto-world/xmpp.is /home/user/git/xmpp.is
+git clone https://github.com/crypto-world/dev.xmpp.is /home/user/git/dev.xmpp.is
 
 # Official Prosody modules
 hg clone https://hg.prosody.im/prosody-modules/ /var/lib/prosody/modules
@@ -122,9 +122,9 @@ echo "net.ipv4.tcp_congestion_control=bbr" | tee -a /etc/sysctl.conf
 echo
 
 echo "Executing final steps"
-bash /home/git/test.xmpp.is/scripts/letsencrypt-to-hiawatha.sh
-bash /home/user/git/xmpp.is/scripts/sync.sh
-bash /home/user/git/xmpp.is/scripts/force-owner-and-group.sh
+bash /home/user/git/dev.xmpp.is/scripts/letsencrypt-to-hiawatha.sh
+bash /home/user/git/dev.xmpp.is/scripts/sync.sh
+bash /home/user/git/dev.xmpp.is/scripts/force-owner-and-group.sh
 
 echo
 
