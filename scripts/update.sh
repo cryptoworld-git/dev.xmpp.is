@@ -19,9 +19,9 @@ bash /home/user/git/test.xmpp.is/scripts/sync.sh
 
 echo
 
-echo "Inserting Prosody secrets........."
+#echo "Inserting Prosody secrets........."
 
-bash /root/scripts/prosody-secrets.sh
+#bash /root/scripts/prosody-secrets.sh
 
 echo "Forcing permissions.........."
 
