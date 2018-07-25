@@ -9,5 +9,5 @@ PROSODY="/etc/prosody/"
 cp -rfL "${LE_DIR}${DIR1}/" "${CERTS}"
 
 chown -R prosody:prosody "${PROSODY}"
-chmod -R 600 "${CERTS}"
+chmod -R 700 "${CERTS}"
 prosodyctl reload
