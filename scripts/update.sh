@@ -4,8 +4,7 @@
 echo
 
 # Git
-cd /home/user/git/test.xmpp.is && git pull
-cd /home/user/git/mod_email_pass_reset_english && git pull
+cd /home/user/git/dev.xmpp.is && git pull
 cd /home/user/git/prosody_web_registration_theme && git pull
 
 # Mercurial
@@ -15,7 +14,7 @@ echo
 
 echo "Pushing new configs and files"
 
-bash /home/user/git/test.xmpp.is/scripts/sync.sh
+bash /home/user/git/dev.xmpp.is/scripts/sync.sh
 
 echo
 
@@ -25,7 +24,7 @@ echo
 
 echo "Forcing permissions.........."
 
-bash /home/user/git/test.xmpp.is/scripts/force-owner-and-group.sh
+bash /home/user/git/dev.xmpp.is/scripts/force-owner-and-group.sh
 
 echo
 

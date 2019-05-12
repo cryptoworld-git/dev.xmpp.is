@@ -4,16 +4,7 @@
 echo
 
 echo "Installing miscellaneous packages that I like or need :^)"
-apt install -y htop dstat nload iftop iotop nmap haveged rsync dirmngr apt-utils apt-transport-https dialog ca-certificates wget curl nano lsb-release mtr-tiny ntp zip borgbackup
-
-echo
-
-echo "Installing tools for remote backups"
-apt install -y borgbackup nfs-common
-
-echo "Stopping and disabling rpcbind"
-systemctl stop rpcbind
-systemctl disable rpcbind
+apt install -y htop dstat nload iftop iotop nmap haveged rsync dirmngr apt-utils apt-transport-https dialog ca-certificates wget curl nano lsb-release mtr-tiny ntp zip
 
 echo
 
@@ -67,11 +58,6 @@ apt install -y goaccess
 
 echo
 
-echo "Installing Certbot"
-apt install -y certbot
-
-echo
-
 echo "Installing dependencies for config & module pulling"
 apt install -y git mercurial
 
@@ -97,9 +83,6 @@ git clone https://github.com/crypto-world/dev.xmpp.is /home/user/git/dev.xmpp.is
 
 # Official Prosody modules
 hg clone https://hg.prosody.im/prosody-modules/ /var/lib/prosody/modules
-
-# Email password reset module
-git clone https://github.com/crypto-world/mod_email_pass_reset_english /home/user/git/mod_email_pass_reset_english
 
 # Prosody web registration theme
 git clone https://github.com/crypto-world/prosody_web_registration_theme /home/user/git/prosody_web_registration_theme
