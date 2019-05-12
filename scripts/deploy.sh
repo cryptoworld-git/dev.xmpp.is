@@ -16,14 +16,14 @@ echo
 
 echo "Adding the official Tor repository"
 echo deb https://deb.torproject.org/torproject.org $(lsb_release -sc) main | tee -a /etc/apt/sources.list
-gpg --keyserver pgp.mit.edu --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
+gpg --keyserver ha.pool.sks-keyservers.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 
 echo
 
 echo "Adding Hiawatha repository"
 echo deb https://mirror.tuxhelp.org/debian/ squeeze main | tee -a /etc/apt/sources.list
-apt-key adv --recv-keys --keyserver pgp.mit.edu 79AF54A9
+apt-key adv --recv-keys --keyserver ha.pool.sks-keyservers.net 79AF54A9
 
 echo
 
