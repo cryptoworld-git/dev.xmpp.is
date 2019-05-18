@@ -4,10 +4,15 @@
 echo
 
 # Git
-cd /home/user/git/dev.xmpp.is && git pull
-cd /home/user/git/prosody_web_registration_theme && git pull
+echo "Pulling changes for dev.xmpp.is"
+cd /home/user/git/dev.xmpp.is; git pull
+echo "Pulling changes for prosody_web_registration_theme"
+cd /home/user/git/prosody_web_registration_theme; git pull
+echo "Pulling changes for mod_register_web"
+cd /home/user/git/mod_register_web; git pull
 
 # Mercurial
+echo "Pulling changes for official Prosody modules"
 cd /var/lib/prosody/modules && hg pull && hg update
 
 echo
