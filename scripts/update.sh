@@ -33,6 +33,11 @@ bash /home/user/git/dev.xmpp.is/scripts/force-owner-and-group.sh
 
 echo
 
-echo "Latest configs pushed! Restart or reload services to apply changes"
+echo "Latest configs pushed! Reloading Prosody!"
+prosodyctl reload
+
+# Make sure mod_tls and mod_http get reloaded
+{ echo "module:reload('tls')"; sleep 1; } | telnet localhost 5582
+{ echo "module:reload('http')"; sleep 1; } | telnet localhost 5582
 
 echo
