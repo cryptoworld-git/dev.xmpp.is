@@ -27,3 +27,8 @@ rsync -av /home/user/git/dev.xmpp.is/etc/mercurial/ /etc/mercurial/
 echo
 echo "Syncing prosody_web_registration_theme......"
 rsync -av /home/user/git/prosody_web_registration_theme /etc/prosody/register-templates/
+
+# mod_register_web
+echo
+echo "Syncing mod_register_web......"
+rsync -av /home/user/git/mod_register_web/ /var/lib/prosody/modules/mod_register_web/
